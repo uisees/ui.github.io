@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    color: #494949;
+    overflow: hidden;
+    animation: bgAnimation 10s ease infinite;
+  }
+  
+  @keyframes bgAnimation {
+    0% {
+      background: linear-gradient(45deg, #e0e0e0, #ffffff);
+    }
+    50% {
+      background: linear-gradient(45deg, #cfcfcf, #f4f4f4);
+    }
+    100% {
+      background: linear-gradient(45deg, #e0e0e0, #ffffff);
+    }
+  }
+  .video-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  object-fit: cover;
+}
+
+
+  header {
+    background-color: rgba(1, 5, 5, 0.8);
+    padding: 40px;
+    color: rgb(143, 143, 143);
+    text-align: center;
+    position: relative;
+    border-radius: 10px;
+  }
+  
+  header h1 {
+    font-size: 3em;
+    animation: fadeIn 2s ease-out;
+  }
+  
+  header p {
+    font-size: 1.2em;
+    animation: fadeIn 3s ease-out;
+  }
+  
+  .clock {
+    font-size: 2em;
+    margin-top: 20px;
+    font-weight: bold;
+    animation: fadeIn 4s ease-out;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  }
+  
+  .portfolio {
+    padding: 50px 10%;
+    text-align: center;
+  }
+  
+  .portfolio h2 {
+    margin-bottom: 30px;
+    font-size: 2.5em;
+    animation: slideIn 1s ease-out;
+  }
+  
+  .projects {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+  }
+  
+  .project-card {
+    background-color: rgb(147, 149, 151);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Добавлена тень для объёмности */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Плавная анимация для тени */
+    width: 30%;
+  }
+  
+  .project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2); /* Увеличиваем тень при наведении */
+  }
+  
+  .project-card img {
+    width: 100%;
+    border-radius: 10px;
+  }
+  
+  footer {
+    background-color: #333;
+    color: rgb(22, 15, 15);
+    padding: 10px;
+    text-align: center;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(-50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  
+  
+  
